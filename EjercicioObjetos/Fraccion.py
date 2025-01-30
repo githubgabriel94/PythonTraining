@@ -1,3 +1,6 @@
+# Crear una clase Fraccion, que contiene dos atributos: dividendo y divisor,
+# que se asignan en el constructor, y se imprimen como X/Y en el método __str__.
+
 from math import gcd
 
 class Fraccion():
@@ -10,15 +13,24 @@ class Fraccion():
     def __str__(self):
         return f"{self.dividendo}/{self.divisor}"
 
+# Crear un método sumar que recibe otra fracción y devuelve una nueva fracción
+# con la suma de ambas.
+
     def sumar(self, otra):
         dividendoSuma = self.dividendo * otra.divisor + otra.dividendo * self.divisor
         divisorSuma = self.divisor * otra.divisor
         return Fraccion(dividendoSuma, divisorSuma)
 
+# Crear un método multiplicar que recibe otra fracción y devuelve una 
+# nueva fracción con el producto de ambas.
+
     def multiplicar(self, otra):
         dividendoMulti = self.dividendo * otra.dividendo
         divisorMulti = self.divisor * otra.divisor
         return Fraccion(dividendoMulti, divisorMulti)
+
+# Crear un método simplificar que modifica la fracción actual de forma que
+# los valores del dividendo y divisor sean los menores posibles.
 
     def simplificar(self):
         comunDivisor = gcd(self.dividendo, self.divisor)
