@@ -49,3 +49,5 @@ archivo = archivo_texto=open("archivoNLineas.txt", "r")
 print("------------------------------------------------------------------")
 primerasNLineas(archivo, count)
 print("\n")
+
+archivo.close()

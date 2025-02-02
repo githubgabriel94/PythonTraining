@@ -33,3 +33,6 @@ def transformArchivo(archivo):
 archivoDestino = open("destino.text", "w")
 print(transformArchivo(origen))
 archivoDestino.write(transformArchivo(origen))
+
+archivoOrigen.close()
+archivoDestino.close()
