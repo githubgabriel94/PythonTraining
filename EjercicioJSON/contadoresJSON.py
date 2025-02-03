@@ -1,3 +1,9 @@
+# Implementar un script en Python que permita gestionar un conjunto
+# de contadores. El usuario proporcionará el nombre del contador como 
+# argumento en la línea de comandos incrementándose este contador y 
+# mostrándose su valor actual. Para almacenar los valores actuales de 
+# los contadores se utilizará un solo archivo Json.
+
 import os
 import json
 
